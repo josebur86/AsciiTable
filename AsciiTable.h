@@ -1,3 +1,27 @@
+/*
+
+Usage Example
+-------------
+
+    AsciiTable table = beginTable();
+
+    addColumn( &table, "string Value" );
+    addColumn( &table, "double Value" );
+    addColumn( &table, "int Value" );
+
+    addRow( &table );
+    addValue( &table, "String" );
+    addValue( &table, 1.1 );
+    addValue( &table, 2 );
+
+    addRow( &table );
+    addValue( &table, "String2" );
+    addValue( &table, 2.2 );
+    addValue( &table, 9 );
+
+    endTable( &table, std::cout );
+
+*/
 #pragma once
 
 #include <iomanip>
