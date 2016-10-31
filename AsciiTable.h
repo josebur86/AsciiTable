@@ -21,6 +21,18 @@ Usage Example
 
     endTable( &table, std::cout );
 
+-------------
+
+	This will result in the follow table being printed to std::cout
+
+	+--------------+--------------+-----------+
+	| string Value | double Value | int Value |
+	+--------------+--------------+-----------+
+	|       String |          1.1 |         2 |
+	+--------------+--------------+-----------+
+	|      String2 |          2.2 |         9 |
+	+--------------+--------------+-----------+
+
 */
 #pragma once
 
@@ -33,9 +45,11 @@ Usage Example
 
 /*
     TODO(joe):
-        - Consolidate the column separator 
+	    - Handle when there are less values in a row than columns.
+		- Add ability to add an empty value.
+        - Consolidate the column separator.
         - Handle when the row value's are wider than the column headers.
-        - Handle when there are more values in a row than columns
+        - Handle when there are more values in a row than columns.
 
         - This leans heavily on the STL libraries which might not be helpful on
           projects that aren't compiled in Visual Studio 2012 on Windows.
